@@ -12,7 +12,7 @@
   </head>
   <body>
     <!-- NAV -->
-    <nav style="z-index:-1; position: fixed;  left: 0px; background-color: rgb(247,34,16)" class="fixed align-content-center navbar  container-fluid text-white">
+    <nav style="z-index:1;position: fixed;  left: 0px; background-color: rgb(247,34,16)" class="d-lg-none d-md-block fixed align-content-center navbar  container-fluid text-white">
      <div class="row w-100">
       <a class="navbar-brand col-5 p-0 pl-3" style="height: 30px;" href=" #">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60" style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
@@ -26,7 +26,7 @@
           <a class=" text-white px-2 pt-2 text-decoration-none" style="font-size:.8em;" href=" #">SIGN IN</a>
           <a class=" text-danger px-2 pt-2 text-decoration-none" style="font-size:.8em; background: white;" href=" #">SUBSCRIBE</a>
           <button class="navbar-toggler p-0 ml-2 " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon" style=" width: 25px; color:white;"></span>
+            <i class="fas fa-bars" style="color: white;"></i>
           </button>
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="style navbar-nav float-right  mt-3" style="margin-right: -1em; background: white;">
@@ -74,7 +74,7 @@
 
     <!-- HEADER -->
     <div class="d-none d-lg-block" style=" background-color: rgb(244,245,246);">
-      <header style="background-color: rgb(247,34,16); max-width:1320px; margin:0 auto;" class="container-fluid">
+      <header style="background-color: rgb(247,34,16); max-width:1310px; margin:0 auto;" class="container-fluid">
         <div class="header-top row justify-content-between align-items-end pb-0 px-3 pt-0">
           <div class="text-white">Thu, Oct 10, 2019</div>
           <a class="navbar-brand " href=" #">
@@ -134,21 +134,39 @@
             <li class="nav-item">
               <a class="nav-link" href=" #">Vantage</a>
             </li>
-            <li style="width: 70%;">
-              <form class="form-inline">
-                <input class="form-control mr-1" type="text" placeholder="Search" style="width:100%;">
-              </form>
+            <li style="width: 8%;">
+              <span>Search</span>
+              <i class="fas fa-search" style="width:25px; height:25px; color:black;"></i>
             </li>
           </ul>
         </nav>
       </header>
     </div>
 
+    <!-- MAIN CONTENT -->
+    <main class="pt-lg-0 pt-md-5 pt-sm-5" style="height: 100vh; background-color: rgb(244,245,246); overflow:auto;">
+      <!-- FIRST MAIN'S SECTION -->
+      <section class="inner-container container-fluid row" style="height: 100vh; background-color: white; max-width:1310px; margin:0 auto;">
+        <div class="featured col-12 col-md-5 col-lg order-1 order-md-1 px-md-0 px-sm-0">
+          <h2>Featured Stories</h2>
+        </div>
+        <div class="top-story col-12 col-md-7 col-lg-5 order-1 order-md-2 top-story px-md-0 px-sm-0">
+          <h2>Top story</h2>
+        </div>
+        <div class="opinion col-12 col-lg order-3 order-md-3 opinion px-md-0 px-sm-0">
+          <h2>Opinion</h2>
+        </div>
+      </section>
+      <section class="magazine container-fluid row">
+
+      </section>
+    </main>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/859eff7750.js"></script>
   </body>
 </html>
