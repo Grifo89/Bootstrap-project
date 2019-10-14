@@ -6,9 +6,198 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Lora|Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Newsweek - News, Analisys, Politics, Business, Technology</title>
+
+    <style media="screen">
+      .first-section h2{
+        color: rgba(236, 221, 221);
+        font: bold 14px/16px "Roboto Condensed",sans-serif;
+        text-transform: uppercase;
+      }
+
+      .wrap{
+        position: relative;
+      }
+
+      .category{
+        position: absolute;
+        text-transform: uppercase;
+        padding: 8px 15px 9px;
+        background-color: rgba(255,255,255,.9);
+        display: block;
+        font: bold 17px/16px "Roboto Condensed",sans-serif;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+      .category:not(.sponsored){
+        color: #f72210;
+      }
+
+      .sponsored{
+        color: #3581f4;
+      }
+
+      article{
+        margin: 0 auto;
+        padding-top: 20px;
+      }
+
+      article .title{
+        font-family: "Roboto Condensed",sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 10px;
+        font-weight: bolder;
+        color: black;
+      }
+
+      a{
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .featured, .featured .wrap img{
+        max-width: 342.594px;
+      }
+
+      .top-story, .top-story .wrap img{
+        width: 506.188px;
+      }
+
+      .summary{
+        font-size: 15px;
+        line-height: 20px;
+        font-family: Arial,Helvetica,sans-serif;
+        color: #333;
+      }
+
+      .related{
+        border-bottom: 1px solid rgb(217, 217, 217);;
+        border-top: 1px solid rgb(217, 217, 217);;
+        margin: 20px 0;
+        color: black;
+        font-family: "Roboto Condensed",sans-serif;
+        line-height: 24px;
+        font-weight: bolder;
+        padding: 7px 0;
+        font-size: 19px;
+        line-height: 22px;
+      }
+
+      .culture-stories{
+        background:  rgb(244,245,246);
+        margin-bottom: 20px;
+      }
+
+      .culture-stories h2{
+        padding: 10px;
+        margin: 0
+      }
+
+      .culture-item{
+        width: 243.094px;
+      }
+
+      .culture-item .image a, .culture-item .image a img{
+        display: block;
+        width: 243.094px;
+      }
+
+      .info{
+        padding: 15px 10px 20px;
+      }
+      .info .title{
+        font: 20px/22px "Lora",serif;
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+
+      .info .summary{
+        font: 15px/20px "Helvetica Neue","Helvetica",Arial,sans-serif;
+        color: rgba(39,39,39,.5);
+        margin-bottom: 10px;
+      }
+
+      .info .tag a{
+        font: 300 13px/20px "Helvetica Neue","Helvetica",Arial,sans-serif;
+        color: #272727;
+        display: inline-block;
+        background-color: #c2d4d7;
+        padding-left: 6px;
+        padding-right: 6px;
+        margin-right: 6px;
+        margin-bottom: 6px;
+      }
+
+      .list-group-item{
+        border-top: 1px solid rgba(221, 221, 221, 1);
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .list-group-item img{
+        float: left;
+      }
+
+      .list-group-item .info{
+        padding: 0;
+      }
+
+      .more-stories img{
+        margin-right: 10px;
+      }
+
+      .more-stories a{
+        display: block;
+        font-family: "Roboto Condensed",sans-serif;
+        font-size: 17px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        font-weight: bolder;
+      }
+      .more-stories p{
+        font-size: 15px;
+        margin-bottom: 0;
+      }
+
+      .opinion .info{
+        font: bold 17px/21px "Roboto Condensed",sans-serif;
+        margin-bottom: 5px;
+      }
+
+      .opinion .byline{
+        font: bold 14px/21px "Roboto Condensed",sans-serif;
+        margin-bottom: 5px;
+        color: #555;
+        text-transform: uppercase;
+        margin-top: 4px;
+      }
+
+      .lastest-news a{
+        display: block;
+        font: bold 17px/21px "Roboto Condensed",sans-serif;
+        color: black;
+        text-decoration: none;
+        margin-bottom:
+      }
+
+      .icon{
+        width: 29px;
+        height: 28px;
+        background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+        margin-right: 10px;
+      }
+    </style>
   </head>
   <body>
     <!-- NAV -->
@@ -145,199 +334,212 @@
 
     <!-- MAIN CONTENT -->
     <main class="pt-lg-0 pt-md-5 pt-sm-5" style="background-color: rgb(244,245,246); overflow:auto;">
-      <section class="inner-container container-fluid mx-auto" style="background-color: white; max-width:1310px; ">
-        <div class="row ">
-          <div class="featured col-12 col-md-5 col-lg order-1 order-md-1 px-md-0 px-sm-0">
-            <h2>Featured Stories</h2>
-            <article>
-              <div class="wrap">
-                <a href="#" class="category">World</a>
-                <img src="https://d.newsweek.com/en/full/1535709/typhoon-hagibis-hits-japan.jpg?w=397&h=265&q=90&f=9cbc1fe369fd4b54cee85fd2f644f5ca" alt="">
-              </div>
-              <h3><a href="#">Super Typhoon Hagibis Throttles Japan, Leaving at Least 33 Dead</a></h3>
-              <div class="summary">
-                <p>At least 33 people have died in Japan after Typhoon Hagibis —reportedly one of the most powerful storms to hit the area since the 1950s—tore across the country this weekend.</p>
-              </div>
-              <div class="related"><a href=""></a></div>
-            </article>
-            <article>
-              <div class="wrap">
-                <a href="#" class="category">sports</a>
-                <img src="https://d.newsweek.com/en/full/1535679/kipchoge.jpg?w=397&h=265&q=90&f=666236c579b9278b5b4b6e66b9910232" alt="">
-              </div>
-              <h3><a href="#">Paving the Way to 1:59:40: Eliud Kipchoge's Road to Marathon Fame</a></h3>
-              <div class="summary">
-                <p>The carefully-controlled conditions that allowed Kipchoge accomplish what was once believed to be impossible are also the reason it won't qualify as a world record.</p>
-              </div>
-            </article>
-            <article>
-              <div class="wrap">
-                <a href="#" class="category">politics</a>
-                <img src="https://d.newsweek.com/en/full/1368501/electoral-college-2016-election-donald-trump-hillary-clinton.jpg?w=397&h=265&q=90&f=421bf22ef888c6666ac5afe7920b9720" alt="">
-              </div>
-              <h3><a href="#">Study: Electoral College Heavily Favors Republicans in Close Elections</a></h3>
-              <div class="summary">
-                <p>The researchers concluded that Republicans will have a major advantage over Democrats in 2020 and beyond unless a policy change completely dissolves the Electoral College.</p>
-              </div>
-            </article>
-            <article>
-              <div class="wrap">
-                <a href="#" class="category">survey</a>
-                <img src="https://d.newsweek.com/en/full/1527409/best-online-shops-2020.png?w=397&h=265&q=90&f=8662347cdc80612bafa925e60426b353" alt="">
-              </div>
-              <h3><a href="#">Best Online Shops 2020</a></h3>
-              <div class="summary">
-                <p>Where should customers go for the best products, prices and service? We ranked the top 1,000 shops across eight industries and 39 categories.</p>
-              </div>
-            </article>
-            <article>
-              <div class="wrap">
-                <a href="#" class="category sponsored">sponsored insight</a>
-                <img src="https://d.newsweek.com/en/full/1532759/2-image-kyushuu.jpg?w=343&h=229&f=19fb60a24b86b1266e3cd04a915dad88" alt="">
-              </div>
-              <h3><a href="#">Which Global Universities are Leading the Way in 2019?</a></h3>
-              <div class="summary">
-                <p>The world is shrinking and the concept of a "global marketplace" has never been more appreciable. Which universities are best preparing tomorrow’s international thought leaders?</p>
-              </div>
-            </article>
-            <article>
-              <div class="wrap">
-                <a href="#" class="category sponsored">sponsored insight</a>
-                <img src="https://d.newsweek.com/en/full/1519881/city-university-seattle.png?w=343&h=229&l=0&t=0&f=35043ef30b7497b37977c4e35b040702" alt="">
-              </div>
-              <h3><a href="#">Why You Should Be An Engineer & Why ABET Is Important to that Path.</a></h3>
-              <div class="summary">
-                <p>Do you dream of changing the world? Do you want to make a practical difference in people’s lives? Engineers do both these things. Find out how to join them.</p>
-              </div>
-            </article>
-          </div>
-          <div class="top-story col-12 col-md-7 col-lg-5 order-1 order-md-2 top-story px-md-0 px-sm-0">
-            <h2>Top story</h2>
-            <article>
-              <div class="wrap">
-                <a href="#" class="category">world</a>
-                <img src="https://d.newsweek.com/en/full/1535720/syria.jpg?w=591&h=364&f=b02539b2728d1db43bc6a0b22c40010c" alt="">
-              </div>
-              <h3><a href="#">Hundreds of ISIS Affiliates Escape Syrian Prison Camp</a></h3>
-              <div class="summary">
-                <p>"We've won. We've beat ISIS and we've beat them badly and decisively," President Trump told reporters last week.</p>
-              </div>
-              <div class="related"><a href="">Defense Secretary, Trump Confirm Syrian Troop Withdrawal: 'Endless Wars!</a></div>
-            </article>
-            <div class="culture-stories">
-              <h2>culture & travel</h2>
-              <div class="culture-items flex-sm flex-wrap">
-                <div class="culture-item">
-                  <div class="image">
-                    <a href=""><img src="https://d.newsweek.com/en/full/1518076/crown-prince-naruhito-japan-his-future-wife-masako-owada-pose-photographs-traditional-japanese.jpg?w=397&h=265&l=50&t=62&f=e541b89894c74bf55ffffce1087be987" alt=""></a>
-                  </div>
-                  <div class="info">
-                    <p class="title">Modern-Day Dynasties Still Ruling the World</p>
-                    <p class="summary">While many of the famed dynastic families of the world have died out or been replaced by democracies, there are  a handful still ruling the roost.</p>
-                    <div class="tag">
-                      <a href="">Travel</a>
-                    </div>
-                  </div>
+      <section class="inner-container container-fluid mx-auto first-section overflow-hidden" style="background-color: white; max-width:1310px; ">
+        <div class="row px-3 pt-4">
+          <div class="col-12 col-md-5 col-lg-3 order-1 order-md-1 px-md-0 px-sm-0 ">
+            <div class="featured mx-auto">
+              <h2>Featured Stories</h2>
+              <article>
+                <div class="wrap">
+                  <a href="#" class="category">World</a>
+                  <img src="https://d.newsweek.com/en/full/1535709/typhoon-hagibis-hits-japan.jpg?w=397&h=265&q=90&f=9cbc1fe369fd4b54cee85fd2f644f5ca" alt="">
                 </div>
-                <div class="culture-item">
-                  <div class="image">
-                    <a href=""><img src="https://d.newsweek.com/en/full/1521909/grenade-head-figures.jpg?w=397&h=265&f=4e870affbb5e5275f269d5c55cb231d8" alt=""></a>
-                  </div>
-                  <div class="info">
-                    <p class="title">Urban Scrawl: The Written Word in Street Art</p>
-                    <p class="summary">Across the world the side walk is turned into an art installation with street art.</p>
-                    <div class="tag">
-                      <a href="">street art</a>
-                    </div>
-                  </div>
+                <h3 class="title"><a href="#">Super Typhoon Hagibis Throttles Japan, Leaving at Least 33 Dead</a></h3>
+                <div class="summary">
+                  <p>At least 33 people have died in Japan after Typhoon Hagibis —reportedly one of the most powerful storms to hit the area since the 1950s—tore across the country this weekend.</p>
                 </div>
-                <div class="culture-item">
-                  <div class="image">
-                    <a href=""><img src="https://d.newsweek.com/en/full/1522856/jonny-saifullah-jan.jpg?w=397&h=265&f=373f940b87b527eb228b0175a6fc5cd7" alt=""></a>
-                  </div>
-                  <div class="info">
-                    <p class="title">The Allure of the 'Disappearing' Tribe</p>
-                    <p class="summary">From pagan tribes in Pakistan to Inuits in Greenland, traditional tribes aren't disappearing, just transitioning.</p>
-                    <div class="tag">
-                      <a href="">pakistan</a>
-                    </div>
-                  </div>
+              </article>
+              <article>
+                <div class="wrap">
+                  <a href="#" class="category">sports</a>
+                  <img src="https://d.newsweek.com/en/full/1535679/kipchoge.jpg?w=397&h=265&q=90&f=666236c579b9278b5b4b6e66b9910232" alt="">
                 </div>
-                <div class="culture-item">
-                  <div class="image">
-                    <a href=""><img src="https://d.newsweek.com/en/full/1521652/publica-isrotel.jpg?w=397&h=265&f=c4992544e55c060176ad047a707cb521" alt=""></a>
-                  </div>
-                  <div class="info">
-                    <p class="title">7 International Hotels For Your Co-Working Needs </p>
-                    <p class="summary">These global hotels are defining the future of work for an entire generation.</p>
-                    <div class="tag">
-                      <a href="">Business Travel</a>
-                    </div>
-                  </div>
+                <h3 class="title"><a href="#">Paving the Way to 1:59:40: Eliud Kipchoge's Road to Marathon Fame</a></h3>
+                <div class="summary">
+                  <p>The carefully-controlled conditions that allowed Kipchoge accomplish what was once believed to be impossible are also the reason it won't qualify as a world record.</p>
                 </div>
-              </div>
+              </article>
+              <article>
+                <div class="wrap">
+                  <a href="#" class="category">politics</a>
+                  <img src="https://d.newsweek.com/en/full/1368501/electoral-college-2016-election-donald-trump-hillary-clinton.jpg?w=397&h=265&q=90&f=421bf22ef888c6666ac5afe7920b9720" alt="">
+                </div>
+                <h3 class="title"><a href="#">Study: Electoral College Heavily Favors Republicans in Close Elections</a></h3>
+                <div class="summary">
+                  <p>The researchers concluded that Republicans will have a major advantage over Democrats in 2020 and beyond unless a policy change completely dissolves the Electoral College.</p>
+                </div>
+              </article>
+              <article>
+                <div class="wrap">
+                  <a href="#" class="category">survey</a>
+                  <img src="https://d.newsweek.com/en/full/1527409/best-online-shops-2020.png?w=397&h=265&q=90&f=8662347cdc80612bafa925e60426b353" alt="">
+                </div>
+                <h3 class="title"><a href="#">Best Online Shops 2020</a></h3>
+                <div class="summary">
+                  <p>Where should customers go for the best products, prices and service? We ranked the top 1,000 shops across eight industries and 39 categories.</p>
+                </div>
+              </article>
+              <article>
+                <div class="wrap">
+                  <a href="#" class="category sponsored">sponsored insight</a>
+                  <img src="https://d.newsweek.com/en/full/1532759/2-image-kyushuu.jpg?w=343&h=229&f=19fb60a24b86b1266e3cd04a915dad88" alt="">
+                </div>
+                <h3 class="title"><a href="#">Which Global Universities are Leading the Way in 2019?</a></h3>
+                <div class="summary">
+                  <p>The world is shrinking and the concept of a "global marketplace" has never been more appreciable. Which universities are best preparing tomorrow’s international thought leaders?</p>
+                </div>
+              </article>
+              <article>
+                <div class="wrap">
+                  <a href="#" class="category sponsored">sponsored insight</a>
+                  <img src="https://d.newsweek.com/en/full/1519881/city-university-seattle.png?w=343&h=229&l=0&t=0&f=35043ef30b7497b37977c4e35b040702" alt="">
+                </div>
+                <h3 class="title"><a href="#">Why You Should Be An Engineer & Why ABET Is Important to that Path.</a></h3>
+                <div class="summary">
+                  <p>Do you dream of changing the world? Do you want to make a practical difference in people’s lives? Engineers do both these things. Find out how to join them.</p>
+                </div>
+              </article>
             </div>
-            <h2>more stories</h2>
-            <ul class="group-list more-stories p-0">
-              <li class="list-group-item">
-                <img src="https://d.newsweek.com/en/full/1535729/atatiana-jefferson.jpg?w=135&h=90&f=7403f99861dec478a7dd1e2bedaf0f3e" alt="">
-                <div class="info">
-                  <a href="#">Black Woman Shot By Police in Her Home in Forth Worth, Texas</a>
-                  <p>Atatiana Jefferson was reportedly playing video games with her nephew and thought there was a potential trespasser outside. When she went to investigate, she was shot by a police officer.</p>
+          </div>
+          <div class="col-12 col-md-7 col-lg-6 order-1 order-md-2 top-story px-md-0 px-sm-0">
+            <div class="top-story mx-auto">
+              <h2>Top story</h2>
+              <article>
+                <div class="wrap">
+                  <a href="#" class="category">world</a>
+                  <img src="https://d.newsweek.com/en/full/1535720/syria.jpg?w=591&h=364&f=b02539b2728d1db43bc6a0b22c40010c" alt="">
                 </div>
-              </li>
-              <li class="list-group-item">
-                <img src="https://d.newsweek.com/en/full/1535706/rudy-giuliani-donald-trump.jpg?w=135&h=90&f=8a245a95e8e94b91b1f9be929810ad3c" alt="">
-                <div class="info">
-                  <a href="#">Trump Remains Loyal to Giuliani</a>
-                  <p>"I know nothing about him being under investigation, as somebody said. I heard a report today– I can't imagine it," the president said in a Fox News interview.</p>
+                <h3><a href="#">Hundreds of ISIS Affiliates Escape Syrian Prison Camp</a></h3>
+                <div class="summary">
+                  <p>"We've won. We've beat ISIS and we've beat them badly and decisively," President Trump told reporters last week.</p>
                 </div>
-              </li>
-              <li class="list-group-item">
-                <img src="https://d.newsweek.com/en/full/1535455/joe-biden-hunter-biden-video.jpg?w=135&h=90&f=ce53bc926024d37ee12e5b00f0ab5383" alt="">
-                <div class="info">
-                  <a href="#">Hunter Biden Steps Down From Chinese Board, Rejects Trump Attacks</a>
-                  <p>He has vowed to cease all foreign work should his father, Joe Biden, be elected president in 2020.</p>
+                <div class="related"><a href="">Defense Secretary, Trump Confirm Syrian Troop Withdrawal: 'Endless Wars!</a></div>
+              </article>
+              <div class="culture-stories fluid-countainer">
+                <h2>culture & travel</h2>
+                <div class="row culture-items flex-sm flex-wrap ml-0 justify-content-between">
+                  <div class="col-12 col-md-6 col-lg-6 px-0">
+                    <div class="culture-item">
+                    <div class="image">
+                      <a href=""><img src="https://d.newsweek.com/en/full/1518076/crown-prince-naruhito-japan-his-future-wife-masako-owada-pose-photographs-traditional-japanese.jpg?w=397&h=265&l=50&t=62&f=e541b89894c74bf55ffffce1087be987" alt=""></a>
+                    </div>
+                    <div class="info">
+                      <p class="title">Modern-Day Dynasties Still Ruling the World</p>
+                      <p class="summary">While many of the famed dynastic families of the world have died out or been replaced by democracies, there are  a handful still ruling the roost.</p>
+                      <div class="tag">
+                        <a href="">Travel</a>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6 px-0">
+                    <div class="culture-item">
+                    <div class="image">
+                      <a href=""><img src="https://d.newsweek.com/en/full/1521652/publica-isrotel.jpg?w=397&h=265&f=c4992544e55c060176ad047a707cb521" alt=""></a>
+                    </div>
+                    <div class="info">
+                      <p class="title">7 International Hotels For Your Co-Working Needs </p>
+                      <p class="summary">These global hotels are defining the future of work for an entire generation.</p>
+                      <div class="tag">
+                        <a href="">Business Travel</a>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
                 </div>
-              </li>
-              <li class="list-group-item">
-                <img src="https://d.newsweek.com/en/full/1535641/us-military-post-syria-border-turkey.jpg?w=135&h=90&f=176266ea9c73b30e466857cce3d11fc0" alt="">
-                <div class="info">
-                  <a href="#">Exclusive: Kurds Heard of Trump's Pullout on Twitter: "What Is This Sh*t?"</a>
-                  <p>Donald Trump's decision to withdraw U.S. troops from positions in Syria blindsided everyone.</p>
+                <div class="row culture-items flex-sm flex-wrap mx-0">
+                  <div class="col-12 col-md-6 col-lg-6 px-0">
+                    <div class="culture-item">
+                      <div class="image">
+                        <a href=""><img src="https://d.newsweek.com/en/full/1521909/grenade-head-figures.jpg?w=397&h=265&f=4e870affbb5e5275f269d5c55cb231d8" alt=""></a>
+                      </div>
+                      <div class="info">
+                        <p class="title">Urban Scrawl: The Written Word in Street Art</p>
+                        <p class="summary">Across the world the side walk is turned into an art installation with street art.</p>
+                        <div class="tag">
+                          <a href="">street art</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6 px-0">
+                    <div class="culture-item">
+                      <div class="image">
+                        <a href=""><img src="https://d.newsweek.com/en/full/1522856/jonny-saifullah-jan.jpg?w=397&h=265&f=373f940b87b527eb228b0175a6fc5cd7" alt=""></a>
+                      </div>
+                      <div class="info">
+                        <p class="title">The Allure of the 'Disappearing' Tribe</p>
+                        <p class="summary">From pagan tribes in Pakistan to Inuits in Greenland, traditional tribes aren't disappearing, just transitioning.</p>
+                        <div class="tag">
+                          <a href="">pakistan</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </li>
-              <li class="list-group-item">
-                <img src="https://d.newsweek.com/en/full/1535627/lawmakers-presidential-candidates-attend-naacp-national-convention.jpg?w=135&h=90&f=ba7115f0bd016d2f5e15384c95bdbf17" alt="">
-                <div class="info">
-                  <a href="#">Warren Announces Fake Facebook Campaign to Test Disinformation Policies</a>
-                  <p>"Facebook holds incredible power to affect elections and our national debate," Warren tweeted. "They've decided to let political figures lie to you."</p>
-                </div>
-              </li>
-              <li class="list-group-item">
-                <img src="https://d.newsweek.com/en/full/1535625/greta-thunberg.jpg?w=135&h=90&l=0&t=0&f=66754b1b005bc9a44dbf735da2f4f9b3" alt="">
-                <div class="info">
-                  <a href="#">Greta Thunberg: Climate Strike Will Continue Till World Leaders Take Notice</a>
-                  <p>"The world is waking up and we are the change. And change is coming whether you like it or not," Thunberg said at a rally in Denver.</p>
-                </div>
-              </li>
-              <li class="list-group-item">
-                <img src="https://d.newsweek.com/en/full/1535666/california-gov-newsom-ca-attorney-gen-becerra-hold-news-conference-responding-trump-revoking.jpg?w=135&h=90&f=9a0b1b2f5ab1d0df7bbf6ad7ca8c8ef7" alt="">
-                <div class="info">
-                  <a href="#">California Just Passed a Slate of New Gun Control Measures</a>
-                  <p>The NRA quickly condemned the move as an "assault on our Second Amendment rights in the Golden State."</p>
-                </div>
-              </li>
-              <li class="list-group-item">
-                <img src="https://d.newsweek.com/en/full/1535703/jason-san-miguel.png?w=135&h=90&f=bd5b616ac6c233f79bf7d27a5cf8f443" alt="">
-                <div class="info">
-                </div>
+              </div>
+              <h2>more stories</h2>
+              <ul class="group-list more-stories p-0">
+                <li class="clearfix list-group-item">
+                  <img src="https://d.newsweek.com/en/full/1535729/atatiana-jefferson.jpg?w=135&h=90&f=7403f99861dec478a7dd1e2bedaf0f3e" alt="">
+                  <div class="info">
+                    <a href="#">Black Woman Shot By Police in Her Home in Forth Worth, Texas</a>
+                    <p>Atatiana Jefferson was reportedly playing video games with her nephew and thought there was a potential trespasser outside. When she went to investigate, she was shot by a police officer.</p>
+                  </div>
+                </li>
+                <li class="clearfix list-group-item">
+                  <img src="https://d.newsweek.com/en/full/1535706/rudy-giuliani-donald-trump.jpg?w=135&h=90&f=8a245a95e8e94b91b1f9be929810ad3c" alt="">
+                  <div class="info">
+                    <a href="#">Trump Remains Loyal to Giuliani</a>
+                    <p>"I know nothing about him being under investigation, as somebody said. I heard a report today– I can't imagine it," the president said in a Fox News interview.</p>
+                  </div>
+                </li>
+                <li class="clearfix list-group-item">
+                  <img src="https://d.newsweek.com/en/full/1535455/joe-biden-hunter-biden-video.jpg?w=135&h=90&f=ce53bc926024d37ee12e5b00f0ab5383" alt="">
+                  <div class="info">
+                    <a href="#">Hunter Biden Steps Down From Chinese Board, Rejects Trump Attacks</a>
+                    <p>He has vowed to cease all foreign work should his father, Joe Biden, be elected president in 2020.</p>
+                  </div>
+                </li>
+                <li class="clearfix list-group-item">
+                  <img src="https://d.newsweek.com/en/full/1535641/us-military-post-syria-border-turkey.jpg?w=135&h=90&f=176266ea9c73b30e466857cce3d11fc0" alt="">
+                  <div class="info">
+                    <a href="#">Exclusive: Kurds Heard of Trump's Pullout on Twitter: "What Is This Sh*t?"</a>
+                    <p>Donald Trump's decision to withdraw U.S. troops from positions in Syria blindsided everyone.</p>
+                  </div>
+                </li>
+                <li class="clearfix list-group-item">
+                  <img src="https://d.newsweek.com/en/full/1535627/lawmakers-presidential-candidates-attend-naacp-national-convention.jpg?w=135&h=90&f=ba7115f0bd016d2f5e15384c95bdbf17" alt="">
+                  <div class="info">
+                    <a href="#">Warren Announces Fake Facebook Campaign to Test Disinformation Policies</a>
+                    <p>"Facebook holds incredible power to affect elections and our national debate," Warren tweeted. "They've decided to let political figures lie to you."</p>
+                  </div>
+                </li>
+                <li class="clearfix list-group-item">
+                  <img src="https://d.newsweek.com/en/full/1535625/greta-thunberg.jpg?w=135&h=90&l=0&t=0&f=66754b1b005bc9a44dbf735da2f4f9b3" alt="">
+                  <div class="info">
+                    <a href="#">Greta Thunberg: Climate Strike Will Continue Till World Leaders Take Notice</a>
+                    <p>"The world is waking up and we are the change. And change is coming whether you like it or not," Thunberg said at a rally in Denver.</p>
+                  </div>
+                </li>
+                <li class="clearfix list-group-item">
+                  <img src="https://d.newsweek.com/en/full/1535666/california-gov-newsom-ca-attorney-gen-becerra-hold-news-conference-responding-trump-revoking.jpg?w=135&h=90&f=9a0b1b2f5ab1d0df7bbf6ad7ca8c8ef7" alt="">
+                  <div class="info">
+                    <a href="#">California Just Passed a Slate of New Gun Control Measures</a>
+                    <p>The NRA quickly condemned the move as an "assault on our Second Amendment rights in the Golden State."</p>
+                  </div>
+                </li>
+                <li class="clearfix list-group-item">
+                  <img src="https://d.newsweek.com/en/full/1535703/jason-san-miguel.png?w=135&h=90&f=bd5b616ac6c233f79bf7d27a5cf8f443" alt="">
+                  <div class="info">
+                  </div>
                   <a href="#">Texas Man Caught in His Own Attic After Telling Police He Couldn't Be Found</a>
                   <p>Jason Brock San Miguel was apprehended after being the focus of multiple social media appeals this week.</p>
-              </li>
-            </ul>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="opinion col-12 col-lg order-3 order-md-3 opinion px-md-0 px-sm-0">
+          <div class="opinion col-12 col-lg-3 order-3 order-md-3 px-md-0 px-sm-0">
             <h2>Opinion</h2>
             <ul class="group-list opinion p-0">
               <li class="list-group-item">
@@ -409,32 +611,32 @@
             </ul>
             <h2>Lastest News</h2>
             <ul class="group-list lastest-news p-0">
-              <li class="list-group-item">
-                <img src="https://d.newsweek.com/en/full/1535734/donald-trump.jpg?w=397&h=265&f=dcb8b6138ed49558e9ce1ec5ae16c91b" alt="" style="width:135px">
+              <li class="clearfix list-group-item">
+                <img class="pr-3" src="https://d.newsweek.com/en/full/1535734/donald-trump.jpg?w=397&h=265&f=dcb8b6138ed49558e9ce1ec5ae16c91b" alt="" style="width:135px">
                 <a href="#">George Conway Mocks Trump for Changing Position on Turkey in Just 6 Days</a>
               </li>
-              <li class="list-group-item">
-                <img src="https://d.newsweek.com/en/full/1535737/pete-buttigieg.jpg?w=397&h=265&f=09b4b1313e034a0fda511d7c34ce9d89" alt="" style="width:135px">
+              <li class="clearfix list-group-item">
+                <img class="pr-3" src="https://d.newsweek.com/en/full/1535737/pete-buttigieg.jpg?w=397&h=265&f=09b4b1313e034a0fda511d7c34ce9d89" alt="" style="width:135px">
                 <a href="#">Buttigieg Says Churches Shouldn't Be Punished for Being Anti-LGBTQ</a>
               </li>
-              <li class="list-group-item">
-                <img src="https://d.newsweek.com/en/full/1535732/scott-walker.jpg?w=397&h=265&f=e00b0eeaa6936b1e98421d49f8b1af42" alt="" style="width:135px">
+              <li class="clearfix list-group-item">
+                <img class="pr-3" src="https://d.newsweek.com/en/full/1535732/scott-walker.jpg?w=397&h=265&f=e00b0eeaa6936b1e98421d49f8b1af42" alt="" style="width:135px">
                 <a href="#">Former Wisconsin Governor Slammed for Tweet Attempting to Make Fun of AOC</a>
               </li>
-              <li class="list-group-item">
-                <img src="https://d.newsweek.com/en/full/1533844/los-angeles-chargers.jpg?w=397&h=265&f=7d3ac6f276d63f90aa3eb2e9f72b7eac" alt="" style="width:135px">
+              <li class="clearfix list-group-item">
+                <img class="pr-3" src="https://d.newsweek.com/en/full/1533844/los-angeles-chargers.jpg?w=397&h=265&f=7d3ac6f276d63f90aa3eb2e9f72b7eac" alt="" style="width:135px">
                 <a href="#">NFL SNF: Where to Watch Steelers vs Chargers, TV Channel, Live Stream, Odds</a>
               </li>
-              <li class="list-group-item">
-                <img src="https://d.newsweek.com/en/full/1535728/alabama-football.jpg?w=397&h=265&f=9b45b886b73f61f0d7ba7ce4c373d95e" alt="" style="width:135px">
+              <li class="clearfix list-group-item">
+                <img class="pr-3" src="https://d.newsweek.com/en/full/1535728/alabama-football.jpg?w=397&h=265&f=9b45b886b73f61f0d7ba7ce4c373d95e" alt="" style="width:135px">
                 <a href="#">College Football Rankings for Week 8 (10/13/19)</a>
               </li>
-              <li class="list-group-item">
-                <img src="https://d.newsweek.com/en/full/1535450/per-mattismarshall-02-858026108.jpg?w=397&h=265&l=49&t=53&f=057365de944723281769c183ff1f16d5" alt="" style="width:135px">
+              <li class="clearfix list-group-item">
+                <img class="pr-3" src="https://d.newsweek.com/en/full/1535450/per-mattismarshall-02-858026108.jpg?w=397&h=265&l=49&t=53&f=057365de944723281769c183ff1f16d5" alt="" style="width:135px">
                 <a href="#">Schiff, Mattis Warn Trump: ISIS Already Rising in Syria</a>
               </li>
-              <li class="list-group-item">
-                <img src="https://d.newsweek.com/en/full/1535723/zelensky-trump.jpg?w=397&h=265&f=36b828b68c6b4a6b02e315e59cfc9702" alt="" style="width:135px">
+              <li class="clearfix list-group-item">
+                <img class="pr-3" src="https://d.newsweek.com/en/full/1535723/zelensky-trump.jpg?w=397&h=265&f=36b828b68c6b4a6b02e315e59cfc9702" alt="" style="width:135px">
                 <a href="#">Senator Praises Trump for Being 'Transparent' About Foreign Interference</a>
               </li>
             </ul>
@@ -472,7 +674,7 @@
               <p>See All Features</p>
             </div>
             <div class="col-12 col-md-9">
-              <img src="" alt="">
+              <img class="icon" src="https://g.newsweek.com/www/images/logo-n1.svg" alt="" style="">
               <span class="label">Label</span>
               <hr>
               <div class="row">

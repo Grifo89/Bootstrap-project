@@ -54,9 +54,10 @@ ul.style a {
 
 nav.head ul li a {
   font-weight: bolder;
-  font-size: 1.2em;
+  font-size: 21px;
   color: black;
   padding: 0;
+  font-family: "Roboto condensed", sans-serif;
 }
 
 nav.head ul li {
