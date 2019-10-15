@@ -13,13 +13,14 @@
 
     <style media="screen">
       .first-section h2{
-        color: rgba(236, 221, 221);
+        color: rgba(162, 161, 161);
         font: bold 14px/16px "Roboto Condensed",sans-serif;
         text-transform: uppercase;
       }
 
       .wrap{
         position: relative;
+        overflow: hidden;
       }
 
       .category{
@@ -59,10 +60,6 @@
       a{
         text-decoration: none;
         color: inherit;
-      }
-
-      .featured, .featured .wrap img{
-        max-width: 342.594px;
       }
 
       .top-story, .top-story .wrap img{
@@ -195,7 +192,34 @@
         width: 29px;
         height: 28px;
         background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
-        margin-right: 10px;
+      }
+
+      .category-card{
+      font: bold 16px/26px "Roboto Condensed",sans-serif;
+      color: #f72210;
+      text-transform: uppercase;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      background: rgba(255, 255, 255, 1);
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      }
+
+      .category-card span:first-child{
+        padding: 4px 7px;
+        background-color: #f72210;
+        color: white;
+        margin-right: 7px;
+      }
+
+      .category-card h2{
+        font-size: 17px;
+        line-height: 20px;
+        font-family: "Roboto Condensed",sans-serif;
+        color: black;
+        font-weight: bolder;
       }
     </style>
   </head>
@@ -342,7 +366,7 @@
               <article>
                 <div class="wrap">
                   <a href="#" class="category">World</a>
-                  <img src="https://d.newsweek.com/en/full/1535709/typhoon-hagibis-hits-japan.jpg?w=397&h=265&q=90&f=9cbc1fe369fd4b54cee85fd2f644f5ca" alt="">
+                  <img class="w-100" src="https://d.newsweek.com/en/full/1535709/typhoon-hagibis-hits-japan.jpg?w=397&h=265&q=90&f=9cbc1fe369fd4b54cee85fd2f644f5ca" alt="">
                 </div>
                 <h3 class="title"><a href="#">Super Typhoon Hagibis Throttles Japan, Leaving at Least 33 Dead</a></h3>
                 <div class="summary">
@@ -352,7 +376,7 @@
               <article>
                 <div class="wrap">
                   <a href="#" class="category">sports</a>
-                  <img src="https://d.newsweek.com/en/full/1535679/kipchoge.jpg?w=397&h=265&q=90&f=666236c579b9278b5b4b6e66b9910232" alt="">
+                  <img class="w-100" src="https://d.newsweek.com/en/full/1535679/kipchoge.jpg?w=397&h=265&q=90&f=666236c579b9278b5b4b6e66b9910232" alt="">
                 </div>
                 <h3 class="title"><a href="#">Paving the Way to 1:59:40: Eliud Kipchoge's Road to Marathon Fame</a></h3>
                 <div class="summary">
@@ -362,7 +386,7 @@
               <article>
                 <div class="wrap">
                   <a href="#" class="category">politics</a>
-                  <img src="https://d.newsweek.com/en/full/1368501/electoral-college-2016-election-donald-trump-hillary-clinton.jpg?w=397&h=265&q=90&f=421bf22ef888c6666ac5afe7920b9720" alt="">
+                  <img class="w-100" src="https://d.newsweek.com/en/full/1368501/electoral-college-2016-election-donald-trump-hillary-clinton.jpg?w=397&h=265&q=90&f=421bf22ef888c6666ac5afe7920b9720" alt="">
                 </div>
                 <h3 class="title"><a href="#">Study: Electoral College Heavily Favors Republicans in Close Elections</a></h3>
                 <div class="summary">
@@ -372,7 +396,7 @@
               <article>
                 <div class="wrap">
                   <a href="#" class="category">survey</a>
-                  <img src="https://d.newsweek.com/en/full/1527409/best-online-shops-2020.png?w=397&h=265&q=90&f=8662347cdc80612bafa925e60426b353" alt="">
+                  <img class="w-100" src="https://d.newsweek.com/en/full/1527409/best-online-shops-2020.png?w=397&h=265&q=90&f=8662347cdc80612bafa925e60426b353" alt="">
                 </div>
                 <h3 class="title"><a href="#">Best Online Shops 2020</a></h3>
                 <div class="summary">
@@ -382,7 +406,7 @@
               <article>
                 <div class="wrap">
                   <a href="#" class="category sponsored">sponsored insight</a>
-                  <img src="https://d.newsweek.com/en/full/1532759/2-image-kyushuu.jpg?w=343&h=229&f=19fb60a24b86b1266e3cd04a915dad88" alt="">
+                  <img class="w-100" src="https://d.newsweek.com/en/full/1532759/2-image-kyushuu.jpg?w=343&h=229&f=19fb60a24b86b1266e3cd04a915dad88" alt="">
                 </div>
                 <h3 class="title"><a href="#">Which Global Universities are Leading the Way in 2019?</a></h3>
                 <div class="summary">
@@ -392,7 +416,7 @@
               <article>
                 <div class="wrap">
                   <a href="#" class="category sponsored">sponsored insight</a>
-                  <img src="https://d.newsweek.com/en/full/1519881/city-university-seattle.png?w=343&h=229&l=0&t=0&f=35043ef30b7497b37977c4e35b040702" alt="">
+                  <img class="w-100" src="https://d.newsweek.com/en/full/1519881/city-university-seattle.png?w=343&h=229&l=0&t=0&f=35043ef30b7497b37977c4e35b040702" alt="">
                 </div>
                 <h3 class="title"><a href="#">Why You Should Be An Engineer & Why ABET Is Important to that Path.</a></h3>
                 <div class="summary">
@@ -665,43 +689,95 @@
       </section>
       <section class="inner-container container-fluid mx-auto" style="background-color: white; max-width:1310px;">
         <div class="magazine w-100 ">
-          <div class="row">
-            <div class="col-12 col-md-3">
+          <div class="row mb-4">
+            <div class="col-12 col-md-3 px-1">
               <div class="wrap">
-                <img src="" alt="">
-                <a href=""></a>
+                <img class="w-100"
+                src="https://d.newsweek.com/en/full/1531488/october-11-18-2019.jpg?w=360&h=480&q=90&f=8a6178c02956a944ee55a303cf81ef89" alt="">
+                <a  class="category" href="#">October 18 ISSUE</a>
               </div>
               <p>See All Features</p>
             </div>
             <div class="col-12 col-md-9">
-              <img class="icon" src="https://g.newsweek.com/www/images/logo-n1.svg" alt="" style="">
-              <span class="label">Label</span>
+              <div class="icon-label text-center">
+                <img class="icon" src="https://g.newsweek.com/www/images/logo-n1.svg" alt="" style="">
+                <span class="label">IN THE MAGAZINE</span>
+              </div>
               <hr>
               <div class="row">
-                <div class="card col-12 col-md-4">
-                  card
+                <div class="card col-12 col-md-4 px-3">
+                  <div class="wrap">
+                    <img class="w-100" src="https://d.newsweek.com/en/full/1531488/october-11-18-2019.jpg?w=360&h=480&q=90&f=8a6178c02956a944ee55a303cf81ef89" alt="">
+                    <div class="category-card w-100 my-0 py-1" style="position: absolute;">
+                      <span>Cover</span>
+                      <span>U.S.</span>
+                      <h2 class="mb-0 mt-1">'Gleefully Defiant' Trump Spoils for Fight, But Will His Playbook Fail Him?</h2>
+                    </div>
+                  </div>
                 </div>
-                <div class="card col-12 col-md-4">
-                  card
+                <div class="card col-12 col-md-4 px-4">
+                  <div class="wrap">
+                    <img src="https://d.newsweek.com/en/full/1531411/per-africa-01-525609494-banner.jpg?w=466&h=311&l=46&t=43&q=90&f=c8ab04ac9b851f960ce03ffba5b5bff0" alt="">
+                    <div class="category-card w-100 my-0 py-1">
+                      <span>Cover</span>
+                      <span>U.S.</span>
+                      <h2 class="mb-0 mt-1">'Gleefully Defiant' Trump Spoils for Fight, But Will His Playbook Fail Him?</h2>
+                    </div>
+                  </div>
                 </div>
-                <div class="card col-12 col-md-4">
-                  card
+                <div class="card col-12 col-md-4 px-4">
+                  <div class="wrap">
+                    <img src="https://d.newsweek.com/en/full/1525501/coffee-rust.webp?w=466&h=311&q=90&f=4da0bf1ccbdf14483b45ee7f66f99a84" alt="">
+                    <div class="category-card w-100 my-0 py-1">
+                      <span>Cover</span>
+                      <span>U.S.</span>
+                      <h2 class="mb-0 mt-1">'Gleefully Defiant' Trump Spoils for Fight, But Will His Playbook Fail Him?</h2>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         <div class="row">
-          <div class="card col-12 col-md-3">
-            card
+          <div class="card col-12 col-md-3 px-3">
+            <div class="wrap">
+              <img src="https://d.newsweek.com/en/full/1531430/hor-moonshots-tinctorium-01-681734420.jpg?w=466&h=311&l=55&t=38&q=90&f=1ed0b20aaba6b6bdf1127b0929c1b378" alt="">
+              <div class="category-card w-100 my-0 py-1">
+                <span>Cover</span>
+                <span>U.S.</span>
+                <h2 class="mb-0 mt-1">'Gleefully Defiant' Trump Spoils for Fight, But Will His Playbook Fail Him?</h2>
+              </div>
+            </div>
           </div>
-          <div class="card col-12 col-md-3">
-            card
+          <div class="card col-12 col-md-3 px-3">
+            <div class="wrap">
+              <img src="https://d.newsweek.com/en/full/1532238/cul-books-01-997638600.jpg?w=466&h=311&l=49&t=48&q=90&f=4fade687ec645d16dfa0b204673a15b2" alt="">
+              <div class="category-card w-100 my-0 py-1">
+                <span>Cover</span>
+                <span>U.S.</span>
+                <h2 class="mb-0 mt-1">'Gleefully Defiant' Trump Spoils for Fight, But Will His Playbook Fail Him?</h2>
+              </div>
+            </div>
           </div>
-          <div class="card col-12 col-md-3">
-            card
+          <div class="card col-12 col-md-3 px-3">
+            <div class="wrap">
+              <img src="https://d.newsweek.com/en/full/1531411/per-africa-01-525609494-banner.jpg?w=466&h=311&l=46&t=43&q=90&f=c8ab04ac9b851f960ce03ffba5b5bff0" alt="">
+              <div class="category-card w-100 my-0 py-1">
+                <span>Cover</span>
+                <span>U.S.</span>
+                <h2 class="mb-0 mt-1">'Gleefully Defiant' Trump Spoils for Fight, But Will His Playbook Fail Him?</h2>
+              </div>
+            </div>
           </div>
-          <div class="card col-12 col-md-3">
-            card
+          <div class="card col-12 col-md-3 px-3">
+            <div class="wrap">
+              <img src="https://d.newsweek.com/en/full/1531411/per-africa-01-525609494-banner.jpg?w=466&h=311&l=46&t=43&q=90&f=c8ab04ac9b851f960ce03ffba5b5bff0" alt="">
+              <div class="category-card w-100 my-0 py-1">
+                <span>Cover</span>
+                <span>U.S.</span>
+                <h2 class="mb-0 mt-1">'Gleefully Defiant' Trump Spoils for Fight, But Will His Playbook Fail Him?</h2>
+              </div>
+            </div>
           </div>
         </div>
         </div>
