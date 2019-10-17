@@ -52,6 +52,34 @@ nav.head::after {
   border-top: 13px solid #f72210;
 }
 
+nav.responsive {
+  position: fixed;
+  z-index: 3;
+  background: rgb(247,34,16);
+}
+
+nav.responsive .navbar-brand {
+  height: 30px;
+}
+
+nav.responsive .sign-in {
+  font-size: 0.8em;
+}
+
+nav.responsive .subscribe {
+  font-size: 0.8em;
+  background: white;
+}
+
+.fa-bars {
+  color: white;
+}
+
+nav.responsive .style{
+  margin-right: -1em;
+  background: white;
+}
+
 a {
   text-decoration: none;
   color: inherit;
