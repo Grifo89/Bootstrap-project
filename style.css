@@ -38,6 +38,8 @@ header .navbar-brand svg {
 nav.head {
   position: relative;
   border-bottom: 1px solid #dbdee0fc;
+  background: white;
+  padding-top: 15px;
 }
 
 nav.head::after {
@@ -81,16 +83,16 @@ nav.responsive .subscribe {
   color: black;
 }
 
-nav.responsive .style{
+nav.responsive .style {
   margin-right: -1em;
   background: white;
 }
 
-.d-lg-block{
+.d-lg-block {
   background: rgb(244, 245, 246);
 }
 
-.d-lg-block header{
+.d-lg-block header {
   background: rgb(247, 34, 16);
   max-width: 1310px;
   margin: 0 auto;
@@ -101,16 +103,11 @@ nav.responsive .style{
   color: rgb(247, 34, 16);
 }
 
-nav.head {
-  background: white;
-  padding-top: 15px;
-}
-
 .tech {
-  min-width:170px;
+  min-width: 170px;
 }
 
-.last-link{
+.last-link {
   width: 8%;
 }
 
