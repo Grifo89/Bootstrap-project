@@ -16,7 +16,7 @@ Read more about the project detailed description from the [Odin website](https:/
 
 ### [Assingment Link](https://www.theodinproject.com/courses/html5-and-css3/lessons/using-bootstrap)
 
-### [Live link](https://rawcdn.githack.com/Grifo89/Bootstrap-project/tree/navbar)
+### [Live link](https://grifo89.github.io/Bootstrap-project/)
 
 # Languages Used
 
