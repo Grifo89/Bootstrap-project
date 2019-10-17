@@ -55,7 +55,7 @@ nav.head::after {
 nav.responsive {
   position: fixed;
   z-index: 3;
-  background: rgb(247,34,16);
+  background: rgb(247, 34, 16);
 }
 
 nav.responsive .navbar-brand {
@@ -75,9 +75,53 @@ nav.responsive .subscribe {
   color: white;
 }
 
+.fa-search {
+  width: 25px;
+  height: 25px;
+  color: black;
+}
+
 nav.responsive .style{
   margin-right: -1em;
   background: white;
+}
+
+.d-lg-block{
+  background: rgb(244, 245, 246);
+}
+
+.d-lg-block header{
+  background: rgb(247, 34, 16);
+  max-width: 1310px;
+  margin: 0 auto;
+}
+
+.header-subscribe {
+  background: white;
+  color: rgb(247, 34, 16);
+}
+
+nav.head {
+  background: white;
+  padding-top: 15px;
+}
+
+.tech {
+  min-width:170px;
+}
+
+.last-link{
+  width: 8%;
+}
+
+main {
+  background-color: rgb(244, 245, 246);
+  overflow: auto;
+}
+
+.inner-container {
+  background: white;
+  max-width: 1310px;
 }
 
 a {
